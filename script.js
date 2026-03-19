@@ -2,7 +2,7 @@ async function uploadFile() {
 
     const file = document.getElementById("fileInput").files[0];
 
-    const response = await fetch("https://cq48u7klna.execute-api.eu-west-1.amazonaws.com/dev/stats/upload-url");
+    const response = await fetch("https://dq5e50h0z9.execute-api.eu-west-1.amazonaws.com/dev/upload-url");
     const data = await response.json();
 
     const uploadURL = data.uploadURL;
@@ -17,7 +17,7 @@ async function uploadFile() {
 
 async function loadStats() {
 
-    const response = await fetch("YOUR_API/dev/stats");
+    const response = await fetch("https://cq48u7klna.execute-api.eu-west-1.amazonaws.com/dev/stats");
 
     const data = await response.json();
 
